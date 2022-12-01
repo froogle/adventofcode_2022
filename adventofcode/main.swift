@@ -7,5 +7,9 @@
 
 import Foundation
 
-print("Hello, World!")
+print("Welcome to Advent of Code!")
+
+let day1 = Day1()
+day1.execute()
+
 
