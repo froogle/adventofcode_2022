@@ -12,4 +12,6 @@ print("Welcome to Advent of Code!")
 let day1 = Day1()
 day1.execute()
 
+let day2 = Day2()
+day2.execute()
 

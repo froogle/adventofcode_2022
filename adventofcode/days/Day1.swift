@@ -10,34 +10,29 @@ import Foundation
 class Day1 {
     
     func execute() {
-        let inputPath = "/Users/froogle/develops/adventofcode/adventofcode/inputs/day1_1"
         
-        guard let file = freopen(inputPath, "r", stdin) else {
-            print("I was unable to open the input file")
-            return
-        }
-        defer {
-            fclose(file)
-        }
+        let handler = InputHandler(
+            path: "/Users/froogle/develops/adventofcode/adventofcode/inputs/day1_1"
+        )
         
+        var elves : [Int] = []
         
-        var calories : [Int] = []
-        var currentScore = 0
-        while let line = readLine() {
+        var caloriesTotal = 0
+        
+        handler.parse() { line in
             if line.isEmpty {
-                calories.append(currentScore)
-                currentScore = 0
-            } else {
-                currentScore += Int(line) ?? 0
-            }
+                elves.append(caloriesTotal)
+                caloriesTotal = 0
+            } else { caloriesTotal += Int(line) ?? 0 }
         }
-        calories.append(currentScore)
         
-        let sortedCalories = calories.sorted()
+        let sortedElves = elves.sorted().reversed()
         
-        for score in sortedCalories {
+        var totalScore = 0
+        for score in sortedElves.prefix(3) {
+            totalScore += Int(score)
             print(String(score))
         }
+        print("The total is " + String(totalScore))
     }
-    
 }
