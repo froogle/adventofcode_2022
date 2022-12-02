@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Day1 {
+class Day1 : AdventDay{
     
     func execute() {
         

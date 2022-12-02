@@ -11,6 +11,7 @@
 		6F08DFA72938B72D00471921 /* Day1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F08DFA62938B72D00471921 /* Day1.swift */; };
 		6F970E4E2939E37500F84C60 /* Day2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F970E4D2939E37500F84C60 /* Day2.swift */; };
 		6F970E502939F3A500F84C60 /* InputHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F970E4F2939F3A500F84C60 /* InputHandler.swift */; };
+		6F970E52293A115C00F84C60 /* AdventDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F970E51293A115C00F84C60 /* AdventDay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +34,7 @@
 		6F970E4C2939E30F00F84C60 /* day2_1 */ = {isa = PBXFileReference; lastKnownFileType = text; path = day2_1; sourceTree = "<group>"; };
 		6F970E4D2939E37500F84C60 /* Day2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day2.swift; sourceTree = "<group>"; };
 		6F970E4F2939F3A500F84C60 /* InputHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputHandler.swift; sourceTree = "<group>"; };
+		6F970E51293A115C00F84C60 /* AdventDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventDay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				6F08DFA32938B64100471921 /* inputs */,
 				6F08DF9C2938B5E900471921 /* main.swift */,
 				6F970E4F2939F3A500F84C60 /* InputHandler.swift */,
+				6F970E51293A115C00F84C60 /* AdventDay.swift */,
 			);
 			path = adventofcode;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F970E52293A115C00F84C60 /* AdventDay.swift in Sources */,
 				6F08DFA72938B72D00471921 /* Day1.swift in Sources */,
 				6F970E4E2939E37500F84C60 /* Day2.swift in Sources */,
 				6F08DF9D2938B5E900471921 /* main.swift in Sources */,

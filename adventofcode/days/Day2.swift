@@ -7,20 +7,20 @@
 
 import Foundation
 
-class Day2 {
+class Day2 : AdventDay {
     // A = 1, B = 2, C = 3
     let scores: [String:Int] = [
-        "A X" : 1 + 3,
-        "A Y" : 2 + 6,
-        "A Z" : 3 + 0,
+        "A X" : 1 + 3, // 2
+        "A Y" : 2 + 6, // 3
+        "A Z" : 3 + 0, // 4
         
-        "B X" : 1 + 0,
-        "B Y" : 2 + 3,
-        "B Z" : 3 + 6,
+        "B X" : 1 + 0, // 3
+        "B Y" : 2 + 3, // 4
+        "B Z" : 3 + 6, // 5
         
-        "C X" : 1 + 6,
-        "C Y" : 2 + 0,
-        "C Z" : 3 + 3,
+        "C X" : 1 + 6, // 4
+        "C Y" : 2 + 0, // 5
+        "C Z" : 3 + 3, // 6
     ]
     
 
@@ -53,8 +53,7 @@ class Day2 {
             totalStrategyScore += scores[ strategy[line]! ] ?? 0
         }
         
-        // Winning was 13809 and 12316
         print("Actual Score: " + String(totalScore))
-        print("Strategy SCore: " + String(totalStrategyScore))
+        print("Strategy Score: " + String(totalStrategyScore))
     }
 }
