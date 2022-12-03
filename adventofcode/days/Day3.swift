@@ -39,8 +39,9 @@ class Day3 : AdventDay  {
                 groupItems[item] = 1 + (groupItems[item] ?? 0)
             }
             
-            elfCounter = (elfCounter + 1) % 3
             
+            
+            elfCounter = (elfCounter + 1) % 3
             if elfCounter == 0 {
                 var groupPriority = 0
                 // Sum all values where count is greater than 1
@@ -49,14 +50,9 @@ class Day3 : AdventDay  {
                         groupPriority += (indexOf(searchTerm: String(backpackItem), inSource: priorities) ?? 0) + 1
                     }
                 }
-                
                 groupItems = [Substring.Element: Int]()
                 totalGroupScore += groupPriority
             }
-            
-
-            
-            
         }
         
         print("The total value of all the priorities is \(totalScore)")
@@ -65,15 +61,15 @@ class Day3 : AdventDay  {
     
     
     func indexOf( searchTerm: String, inSource: String) -> Int? {
-
-         var index: Int = 0
-         
-         if let range: Range<String.Index> = inSource.range(of: searchTerm) {
-              index = inSource.distance(from: inSource.startIndex, to: range.lowerBound)
-             return index
-         }
+        
+        var index: Int = 0
+        
+        if let range: Range<String.Index> = inSource.range(of: searchTerm) {
+            index = inSource.distance(from: inSource.startIndex, to: range.lowerBound)
+            return index
+        }
         return nil
     }
     
-
+    
 }
