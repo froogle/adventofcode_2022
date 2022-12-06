@@ -61,7 +61,7 @@ class Day5 : AdventDay {
             .matchingSemantics(.graphemeCluster)
             .repetitionBehavior(.eager)
         
-        var stackNumber = 0
+        var stackNumber = 0 
         for match in line.matches(of: stacksRegex) {
             let item = String(match.output)
             if item != "0" {
