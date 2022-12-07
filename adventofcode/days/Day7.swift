@@ -25,9 +25,7 @@ class Day7 : AdventDay {
                 } else {
                     filePaths.append( String(words[2]) )
                 }
-            } else if words[1] == "ls" || words[1] == "dir" {
-                //
-            } else {
+            } else if words[0] != "$" {
                 let fileSize = Int(words[0]) ?? 0
 
                 var qualifiedPath = "/"
@@ -41,23 +39,23 @@ class Day7 : AdventDay {
         sizes["/"] = totalSize
         
         let maxUsed = 70000000 - 30000000
-        let totalUsed = sizes["/"] ?? 0
+        let totalUsed = sizes["/"]!
         let needToFree = totalUsed - maxUsed
         
-        var p1 = 0
-        var p2 = 10000000000
+        var part1Answer = 0
+        var part2Answer = 10000000000
         for key in sizes.keys {
             if sizes[key]! <= 100000 {
-                p1 += sizes[key]!
+                part1Answer += sizes[key]!
             }
             
             if sizes[key]! >= needToFree {
-                p2 = min( p2, sizes[key]!)
+                part2Answer = min( part2Answer, sizes[key]!)
             }
         }
         
-        print(p1)
-        print(p2)
+        print(part1Answer)
+        print(part2Answer)
         
     }
 }
