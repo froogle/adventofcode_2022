@@ -8,5 +8,10 @@
 import Foundation
 
 class Day8 : AdventDay {
-    
+
+    func execute() {
+        parse { line in
+            
+        }
+    }
 }

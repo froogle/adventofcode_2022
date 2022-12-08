@@ -15,7 +15,7 @@ class Day1 : AdventDay{
         
         var caloriesTotal = 0
         
-        parse() { line in
+        parse{ line in
             if line.isEmpty {
                 elves.append(caloriesTotal)
                 caloriesTotal = 0

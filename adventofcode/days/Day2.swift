@@ -45,7 +45,7 @@ class Day2 : AdventDay {
         var totalScore = 0
         var totalStrategyScore = 0
         
-        parse() { line in
+        parse { line in
             totalScore += scores[line] ?? 0
             totalStrategyScore += scores[ strategy[line]! ] ?? 0
         }
