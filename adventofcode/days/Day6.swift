@@ -10,11 +10,8 @@ class Day6 : AdventDay {
 
 
     func execute() {
-        let handler = InputHandler(
-            path: "/Users/froogle/develops/adventofcode/adventofcode/inputs/day6_1"
-        )
         
-        handler.parse{ line in
+        parse{ line in
             
             findMarker(line, length: 4)
             findMarker(line, length: 14)

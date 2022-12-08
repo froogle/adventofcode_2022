@@ -11,15 +11,11 @@ class Day1 : AdventDay{
     
     func execute() {
         
-        let handler = InputHandler(
-            path: "/Users/froogle/develops/adventofcode/adventofcode/inputs/day1_1"
-        )
-        
         var elves : [Int] = []
         
         var caloriesTotal = 0
         
-        handler.parse() { line in
+        parse() { line in
             if line.isEmpty {
                 elves.append(caloriesTotal)
                 caloriesTotal = 0

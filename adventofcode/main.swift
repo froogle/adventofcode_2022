@@ -9,17 +9,17 @@ import Foundation
 
 print("Welcome to Advent of Code!")
 
-Day1().execute()
+Day1(1).execute()
 
-Day2().execute()
+Day2(2).execute()
 
-Day3().execute()
+Day3(3).execute()
 
-Day4().execute()
+Day4(4).execute()
 
-Day5().execute()
+Day5(5).execute()
 
-Day6().execute()
+Day6(6).execute()
 
-Day7().execute()
+Day7(7).execute()
 

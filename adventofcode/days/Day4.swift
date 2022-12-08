@@ -9,13 +9,11 @@ import Foundation
 class Day4 : AdventDay {
     
     func execute() {
-        let handler = InputHandler(
-            path: "/Users/froogle/develops/adventofcode/adventofcode/inputs/day4_1"
-        )
+
         
         var overlaps = 0
         var partialOverlaps = 0
-        handler.parse { line in
+        parse { line in
             let elfSections = line.split(separator: ",")
             
             var sectionPair = SectionPair()

@@ -21,9 +21,6 @@ class Day5 : AdventDay {
     
     
     func execute() {
-        let handler = InputHandler(
-            path: "/Users/froogle/develops/adventofcode/adventofcode/inputs/day5_1"
-        )
 
         for _ in 1...9 {
             stacks.append( Stack<String>() )
@@ -31,7 +28,7 @@ class Day5 : AdventDay {
         }
         
         var shuffleMode = false
-        handler.parse { line in
+        parse { line in
             addToStacks(line)
             
             if shuffleMode { processShuffleCommand(line) }

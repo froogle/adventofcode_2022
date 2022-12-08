@@ -12,14 +12,9 @@ class Day7 : AdventDay {
     var filePaths = [String]()
     var totalSize = 0
     
-
-    
     func execute() {
-        let handler = InputHandler(
-            path: "/Users/froogle/develops/adventofcode/adventofcode/inputs/day7_1"
-        )
         
-        handler.parse{ line in
+        parse{ line in
             
             let words = line.split(separator: " ")
             if words[1] == "cd" {

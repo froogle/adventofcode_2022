@@ -9,10 +9,7 @@ import Foundation
 
 class Day3 : AdventDay  {
     func execute() {
-        let handler = InputHandler(
-            path: "/Users/froogle/develops/adventofcode/adventofcode/inputs/day3_1"
-        )
-        
+
         var priorities = "abcdefghijklmnopqrstuvwxyz"
         priorities = priorities + priorities.uppercased()
         
@@ -25,7 +22,7 @@ class Day3 : AdventDay  {
         var totalGroupScore = 0
         
         var groupItems = [Substring.Element: Int]()
-        handler.parse { line in
+        parse { line in
             let uniqueItemsInBackpack = line.prefix(line.count / 2).replacing(regex, with: "") + line.suffix(line.count / 2).replacing(regex, with:"")
             
             for match in uniqueItemsInBackpack.matches(of: regex) {

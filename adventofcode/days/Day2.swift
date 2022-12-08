@@ -41,14 +41,11 @@ class Day2 : AdventDay {
     
     
     func execute() {
-        let handler = InputHandler(
-            path: "/Users/froogle/develops/adventofcode/adventofcode/inputs/day2_1"
-        )
-        
+
         var totalScore = 0
         var totalStrategyScore = 0
         
-        handler.parse() { line in
+        parse() { line in
             totalScore += scores[line] ?? 0
             totalStrategyScore += scores[ strategy[line]! ] ?? 0
         }
