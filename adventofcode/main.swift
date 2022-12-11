@@ -26,3 +26,5 @@ Day7(7).execute()
 Day8(8).execute()
 
 Day9(9).execute()
+
+Day11(11).execute()
